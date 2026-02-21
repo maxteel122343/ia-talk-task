@@ -1,0 +1,5 @@
+{
+  "name": "Chronos AI Workspace",
+  "description": "A conversational AI productivity mentor with camera vision, integrated into an interactive 2D canvas for goal organization and real-time motivation.",
+  "requestFramePermissions": ["camera", "microphone"]
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg-dark: #09090b;
+  --bg-card: #18181b;
+  --border-color: #27272a;
+  --accent: #3b82f6;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #e4e4e7;
+  font-family: var(--font-sans);
+  overflow: hidden; /* Prevent scroll on body, canvas handles it */
+}
+
+/* React Flow Customization */
+.react-flow__node {
+  border-radius: 12px;
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  color: #a1a1aa;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #27272a;
+}
+
+.react-flow__controls-button svg {
+  fill: currentColor;
+}
